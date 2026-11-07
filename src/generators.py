@@ -1,4 +1,4 @@
-"""Graph generators 
+"""Graph generators - Owner : Marvelous
 
 Proposal definitions:
 - sparse: few edges per arrival.
