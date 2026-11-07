@@ -7,10 +7,10 @@ import unittest
 
 from src.common import check_matching, matching_size, validate_graph
 
-""""Small hand-checked graph, used by every algorithm test too.
+"""Small hand-checked graph, used by every algorithm test too.
 Left 0 -> right 0, 1; left 1 -> right 0 only; left 2 -> right 1 only.
 Greedy in arrival order 0, 1, 2 matches 0->0, then 1 is stuck, 2->1 (size 2).
-Offline optimal also gets 2 here (0->1, 1->0 leaves 2 unmatched, or 0->0, 2->1).""""
+Offline optimal also gets 2 here (0->1, 1->0 leaves 2 unmatched, or 0->0, 2->1)."""
 SMALL_ADJ = {0: [0, 1], 1: [0], 2: [1]}
 SMALL_ARRIVAL = [0, 1, 2]
 N_RIGHT = 2
