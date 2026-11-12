@@ -80,3 +80,4 @@ From the updated coding plan:
 - Nov 24-27: full paper assembled in ACM format, slides built
 - Nov 28-30: rehearse the 20 minutes and prep Q&A on every algorithm
 - Dec 1: presentation and report
+- test 
