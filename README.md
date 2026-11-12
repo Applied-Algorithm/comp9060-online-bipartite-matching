@@ -65,6 +65,14 @@ From the updated coding plan:
 
 ## Workflow
 
+- Before committing, set your identity for this repository (replace the values
+  with your own):
+
+```bash
+git config user.name "Your Name"
+git config user.email "you@example.com"
+```
+
 - Work in order: (1) lock the interface and generators, (2) code the 4 algorithms
   in parallel, (3) test on small hand-checked graphs, (4) add b-matching,
   (5) run the full experiments, (6) analyse, write the paper, build slides.
