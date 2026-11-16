@@ -1,7 +1,7 @@
 """Tests for the shared interface in src/common.py.
 TO test common.py run only : python -m unittest discover -s tests -p "test_common.py" -v
 
-to test both test file Run : python3 -m unittest discover -s tests -v
+to test both test file Run : python -m unittest discover -s tests -v
 """
 
 import unittest
