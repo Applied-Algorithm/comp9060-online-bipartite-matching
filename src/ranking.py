@@ -38,8 +38,3 @@ def run(adj, arrival_order, n_right, seed=None, capacity=1):
             used_count[best_right] += 1
 
     return matching, len(matching)
-
-
-def run(adj, arrival_order, n_right, seed=None, capacity=1):
-    """Return (matching, size). `capacity` is the b-matching capacity (1 = ordinary)."""
-    raise NotImplementedError("Implement RANKING")
