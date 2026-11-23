@@ -77,10 +77,14 @@ class TestRanking(unittest.TestCase):
             adj, arrival_order, 3, seed=seed
         )
 
-        expected = {i: ranking_order[i] for i in range(3)}
+        expected = {
+            i: ranking_order[i] for i in range(3)
+        }
 
         self.assertEqual(matching, expected)
         self.assertEqual(size, 3)
         self.assertTrue(check_matching(matching, adj, 3))
+
+
 if __name__ == "__main__":
     unittest.main()
