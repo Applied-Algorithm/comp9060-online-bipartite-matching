@@ -56,5 +56,33 @@ class TestAlgorithms(unittest.TestCase):
             self.assertLessEqual(size, opt_size)
 
 
+class TestRanking(unittest.TestCase):
+    def test_ranking_priority(self):
+        """Check that RANKING follows its fixed random priority."""
+        import random
+
+        adj = {
+            0: [0, 1, 2],
+            1: [0, 1, 2],
+            2: [0, 1, 2]
+        }
+        arrival_order = [0, 1, 2]
+        seed = 42
+
+        ranking_order = list(range(3))
+        random.Random(seed).shuffle(ranking_order)
+
+        matching, size = ranking.run(
+            adj, arrival_order, 3, seed=seed
+        )
+
+        expected = {
+            i: ranking_order[i] for i in range(3)
+        }
+
+        self.assertEqual(matching, expected)
+        self.assertEqual(size, 3)
+        self.assertTrue(check_matching(matching, adj, 3))
+        
 if __name__ == "__main__":
     unittest.main()
