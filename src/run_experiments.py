@@ -6,9 +6,9 @@ time to results/results.csv. Same graph (same seed) to every algorithm.
 
 Do not run the full sizes until the small tests in tests/ pass.
 Start with a size-50 trial only, to check the CSV and timing work.
-ow to run:
-    python3 -m src.run_experiments          full run (all sizes)
-    python3 -m src.run_experiments small    trial run (sizes 50 and 100 only)
+How to run:
+    python -m src.run_experiments          full run (all sizes)
+    python -m src.run_experiments small    trial run (sizes 50 and 100 only)
 
 """
 
